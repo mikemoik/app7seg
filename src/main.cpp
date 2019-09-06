@@ -1,15 +1,12 @@
 #include <Arduino.h>
-#include <NtpClock.h>
+#include <TemplClass.h>
 
-NtpClock _clock;
+Templ::TemplClass _templ;
 
 void setup() {
-  _clock.setWiFi("miswnet", "xt595xt595xt595");
-  _clock.begin();
 }
 
 void loop() {
-  _clock.update();
-  //_clock.blink();
-  _clock.wait();
+  _templ.blink();
+  delay(2000);
 }
