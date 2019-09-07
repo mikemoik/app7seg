@@ -15,5 +15,4 @@ void setup() {
 
 void loop() {
   _templ.blink();
-  delay(2000);
 }
