@@ -1,8 +1,9 @@
-#include <Arduino.h>
+#include <ArduinoMisw.h>
+
 #include <TemplClass.h>
 
 /**
-*
+* pio_apptempl
 *
 * pio flash command:
 * $ pio lib update; pio run -e nodemcuv2 -t upload
