@@ -12,8 +12,10 @@
 #define LED_PIN 6
 #define LED_NUM 4
 #define LED_MODE (NEO_GRB + NEO_KHZ800)
+#define NUM_LED_PER_SEGMENT 1
+#define CHAR_NUM 4
 
-NeoPixel::String7Seg _7seg(LED_NUM, LED_PIN, LED_MODE);
+NeoPixel::String7Seg _7seg(CHAR_NUM, LED_NUM_PER_SEGMENT, LED_NUM, LED_PIN, LED_MODE);
 
 void setup() {
   _7seg.begin();
