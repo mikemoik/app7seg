@@ -13,17 +13,17 @@
 #define LED_NUM 4
 #define LED_MODE (NEO_GRB + NEO_KHZ800)
 
-NeoPixel::String7Seg _str7seg(LED_NUM, LED_PIN, LED_MODE);
+NeoPixel::String7Seg _7seg(LED_NUM, LED_PIN, LED_MODE);
 
 void setup() {
-  _str7seg._strip.begin();
+  _7seg._strip.begin();
 }
 
 void loop() {
-  _str7seg._strip.setPixelColor(0, 0xFFU, 0x0U , 0x0U , 0x0U );
-  _str7seg._strip.setPixelColor(1, 0x0U , 0xFFU, 0x0U , 0x0U );
-  _str7seg._strip.setPixelColor(2, 0x0U , 0x0U , 0xFFU, 0x0U );
-  _str7seg._strip.setPixelColor(3, 0x0U , 0x0U , 0x0U , 0xFFU);
+  _7seg._strip.setPixelColor(0, 0xFFU, 0x0U , 0x0U , 0x0U );
+  _7seg._strip.setPixelColor(1, 0x0U , 0xFFU, 0x0U , 0x0U );
+  _7seg._strip.setPixelColor(2, 0x0U , 0x0U , 0xFFU, 0x0U );
+  _7seg._strip.setPixelColor(3, 0x0U , 0x0U , 0x0U , 0xFFU);
 
   delay(1000);
 }
