@@ -16,7 +16,7 @@
 NeoPixel::String7Seg _7seg(LED_NUM, LED_PIN, LED_MODE);
 
 void setup() {
-  _7seg._strip.begin();
+  _7seg.begin();
 }
 
 void loop() {
