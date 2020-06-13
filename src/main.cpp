@@ -1,6 +1,6 @@
 #include <ArduinoMisw.h>
 
-#include <TemplClass.h>
+#include <lib7seg.h>
 
 /**
 * pio_apptempl
@@ -9,11 +9,22 @@
 * $ pio lib update; pio run -e nodemcuv2 -t upload
 **/
 
-Templ::TemplClass _templ;
+#define LED_PIN 6
+#define LED_NUM 4
+#define LED_MODE (NEO_GRB + NEO_KHZ800)
+
+NeoPixel::String7Seg _str7seg(LED_NUM, LED_PIN, LED_MODE);
 
 void setup() {
+  _str7seg.begin();
+  _str7seg.show();
 }
 
 void loop() {
-  _templ.blink();
+  _str7seg.setPixelColor(0, 0xFFU, 0x0U , 0x0U , 0x0U );
+  _str7seg.setPixelColor(1, 0x0U , 0xFFU, 0x0U , 0x0U );
+  _str7seg.setPixelColor(2, 0x0U , 0x0U , 0xFFU, 0x0U );
+  _str7seg.setPixelColor(3, 0x0U , 0x0U , 0x0U , 0xFFU);
+
+  delay(1000);
 }
