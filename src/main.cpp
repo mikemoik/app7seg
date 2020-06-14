@@ -22,11 +22,11 @@ void setup() {
 }
 
 void loop() {
-  for (int i=0; i<15; i++)
+  for (int i=0; i<16; i++)
   {
     _7seg.setChar(0, (char)i);
     _7seg.render();
-    delay(1000);
+    delay(2000);
   }
 
   // DEBUG
