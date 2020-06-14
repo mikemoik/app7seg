@@ -22,7 +22,12 @@ void setup() {
 }
 
 void loop() {
-  _7seg.render();
+  for (int i=0; i<15; i++)
+  {
+    _7seg.setChar(0, (char)i);
+    _7seg.render();
+    delay(1000);
+  }
 
   // DEBUG
   //_7seg._strip->setPixelColor(0, 0xFFU, 0x0U , 0x0U , 0x0U );
@@ -31,5 +36,4 @@ void loop() {
   //_7seg._strip->setPixelColor(3, 0x0U , 0x0U , 0x0U , 0xFFU);
   //_7seg._strip->show();
 
-  delay(1000);
 }
