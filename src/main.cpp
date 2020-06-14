@@ -10,7 +10,7 @@
 **/
 
 #define LED_PIN D6
-#define LED_NUM 4
+#define LED_NUM 14
 #define LED_MODE (NEO_GRB + NEO_KHZ800)
 #define LED_NUM_PER_SEGMENT 2
 #define CHAR_NUM 1
@@ -34,6 +34,9 @@ void loop() {
   //_7seg._strip->setPixelColor(1, 0x0U , 0xFFU, 0x0U , 0x0U );
   //_7seg._strip->setPixelColor(2, 0x0U , 0x0U , 0xFFU, 0x0U );
   //_7seg._strip->setPixelColor(3, 0x0U , 0x0U , 0x0U , 0xFFU);
+  //for (int i=0; i<15; i++)
+  //{
+  //  _7seg._strip->setPixelColor(i, 0xFFU, 0x0U , 0x0U , 0x0U );
+  //}
   //_7seg._strip->show();
-
 }
