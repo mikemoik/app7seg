@@ -22,7 +22,7 @@ void setup() {
 }
 
 void loop() {
-  for (int i=0; i<16; i++)
+  for (int i=0; i<17; i++)
   {
     _7seg.setChar(0, (char)i);
     _7seg.render();
