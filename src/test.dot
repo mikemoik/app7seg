@@ -1,59 +1,166 @@
-digraph RG20_Milestones_main {
+digraph RG20_FRP_main {
 
-rankdir=LR
+//rankdir=LR
 
-subgraph Legend {
+subgraph Cluster_1 {
   style=filled;
-
-  // MILESTONES
-  node [shape=Mrecord, style=filled, fillcolor=gold];
-  Milestone [label="{ {CW | Year} | Milestone}"];
-
   // FEATURES
-  node [shape=record, style=filled, fillcolor=greenyellow];
-  Feature [label="{ {CW | Year} | Plugin | Feature}"];
-
-  // TASKS
-  node [shape=record, style=filled, fillcolor=lightgrey];
-  Task [label="{ {CW | Year} | Category | Task}"];
-
-  label = "Legend";
+  node [shape=record, style=filled, fillcolor=green];
+  Feature_HTML
+  [
+      shape = none
+      label = <<table border="0" cellspacing="0">
+              <tr><td><table border="0" cellspacing="0">
+                <tr>
+                  <td port="market" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="green">EU</td></tr>
+                    <tr><td bgcolor="lightgrey">NAR</td></tr>
+                    <tr><td bgcolor="lightgrey">CHN</td></tr>
+                    <tr><td bgcolor="lightgrey">ROW</td></tr>
+                  </table></td>
+                  <td port="scenario" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="green">HW</td></tr>
+                    <tr><td bgcolor="lightgrey">RU</td></tr>
+                    <tr><td bgcolor="lightgrey">UR</td></tr>
+                  </table></td>
+                  <td port="subscenario" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="green">STD</td></tr>
+                    <tr><td bgcolor="lightgrey">CON</td></tr>
+                    <tr><td bgcolor="lightgrey">INT</td></tr>
+                    <tr><td bgcolor="lightgrey">CRO</td></tr>
+                    <tr><td bgcolor="lightgrey">RAB</td></tr>
+                  </table></td>
+                  <td port="resolution" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="green">SD</td></tr>
+                    <tr><td bgcolor="yellow">HD</td></tr>
+                    <tr><td bgcolor="lightgrey">ML</td></tr>
+                  </table></td>
+                </tr>
+              </table></td></tr>
+              <tr>
+                <td port="stereotype" border="1" bgcolor="green">
+                  Feature
+                </td>
+              </tr>
+              <tr>
+                <td port="plugin" border="1" bgcolor="white">
+                  RA
+                </td>
+              </tr>
+              <tr>
+                <td port="description" border="1" bgcolor="white">
+                  Description
+                </td>
+              </tr>
+      </table>>
+  ]
 }
+//subgraph Legend {
+//  style=filled;
+//
+//  // MILESTONES
+//  node [shape=Mrecord, style=filled, fillcolor=gold];
+//  Milestone [label="{ {CW | Year} | Milestone}"];
+//
+//  // FEATURES
+//  node [shape=record, style=filled, fillcolor=green];
+//  Feature_HTML
+//  [
+//      shape = none
+//      label = <<table border="0" cellspacing="0">
+//              <tr><td><table border="0" cellspacing="0">
+//                <tr>
+//                  <td port="market" border="0" bgcolor="white">
+//                  <table border="1" cellspacing="0">
+//                    <tr><td bgcolor="green">EU</td></tr>
+//                    <tr><td bgcolor="lightgrey">NAR</td></tr>
+//                    <tr><td bgcolor="lightgrey">CHN</td></tr>
+//                    <tr><td bgcolor="lightgrey">ROW</td></tr>
+//                  </table></td>
+//                  <td port="scenario" border="0" bgcolor="white">
+//                  <table border="1" cellspacing="0">
+//                    <tr><td bgcolor="green">HW</td></tr>
+//                    <tr><td bgcolor="lightgrey">RU</td></tr>
+//                    <tr><td bgcolor="lightgrey">UR</td></tr>
+//                  </table></td>
+//                  <td port="subscenario" border="0" bgcolor="white">
+//                  <table border="1" cellspacing="0">
+//                    <tr><td bgcolor="green">STD</td></tr>
+//                    <tr><td bgcolor="lightgrey">CON</td></tr>
+//                    <tr><td bgcolor="lightgrey">INT</td></tr>
+//                    <tr><td bgcolor="lightgrey">CRO</td></tr>
+//                    <tr><td bgcolor="lightgrey">RAB</td></tr>
+//                  </table></td>
+//                  <td port="resolution" border="0" bgcolor="white">
+//                  <table border="1" cellspacing="0">
+//                    <tr><td bgcolor="green">SD</td></tr>
+//                    <tr><td bgcolor="yellow">HD</td></tr>
+//                    <tr><td bgcolor="lightgrey">ML</td></tr>
+//                  </table></td>
+//                </tr>
+//              </table></td></tr>
+//              <tr>
+//                <td port="stereotype" border="1" bgcolor="green">
+//                  Feature
+//                </td>
+//              </tr>
+//              <tr>
+//                <td port="plugin" border="1" bgcolor="white">
+//                  RA
+//                </td>
+//              </tr>
+//              <tr>
+//                <td port="description" border="1" bgcolor="white">
+//                  Description
+//                </td>
+//              </tr>
+//      </table>>
+//  ]
+//  // TASKS
+//  node [shape=record, style=filled, fillcolor=lightgrey];
+//  Task [label="{ {CW | Year} | Category | Task}"];
+//
+//  label = "Legend";
+//}
 
-subgraph RG20_Milestones {
-  label = "RG20 Milestones";
 
-  // MILESTONES
-  node [shape=Mrecord, style=filled, fillcolor=gold];
-
-  RG4 [label="{ {CW | Year} | RG 4}"];
-  RG6 [label="{ {CW | Year} | RG 6}"];
-  RG7 [label="{ {CW | Year} | RG 7}"];
-  RG8 [label="{ {CW | Year} | RG 8}"];
-
-  RG4 -> RG6 -> RG7 -> RG8;
-
-  // TASKS
-  node [shape=record, style=filled, fillcolor=lightgrey];
-  // data
-  t01 [label="{ {{CW | Year} | KPI | Data Aquisition \n Level 1}}"];
-  t02 [label="{ {{CW | Year} | KPI | Data Labeling \n Level 1}}"];
-  t01 -> RG4;
-  t02 -> RG4;
-  // spice
-  t03 [label="{ {{CW | Year} | PM | A-SPICE 1}}"];
-  t03 -> RG4;
-  t04 [label="{ {{CW | Year} | PM | A-SPICE 2}}"];
-  t04 -> RG8;
-  // release
-  node [shape=record, style=filled, fillcolor=greenyellow];
-  t05 [label="{ {{CW | Year} | REL | TE \n Lvl 3}}"];
-  t05 -> RG4;
-  t06 [label="{ {{CW | Year} | REL | K \n Lvl 4}}"];
-  t06 -> RG8;
-
-  // FEATURES
-  node [shape=record, style=filled, fillcolor=greenyellow];
-}
+//subgraph RG20_Milestones {
+//  label = "RG20 Milestones";
+//  // MILESTONES
+//  node [shape=Mrecord, style=filled, fillcolor=gold];
+//
+//  RG4 [label="{ {CW | Year} | RG 4}"];
+//  RG6 [label="{ {CW | Year} | RG 6}"];
+//  RG7 [label="{ {CW | Year} | RG 7}"];
+//  RG8 [label="{ {CW | Year} | RG 8}"];
+//
+//  RG4 -> RG6 -> RG7 -> RG8;
+//
+//  // TASKS
+//  node [shape=record, style=filled, fillcolor=lightgrey];
+//  // data
+//  t01 [label="{ {{CW | Year} | KPI | Data Aquisition \n Level 1}}"];
+//  t02 [label="{ {{CW | Year} | KPI | Data Labeling \n Level 1}}"];
+//  t01 -> RG4;
+//  t02 -> RG4;
+//  // spice
+//  t03 [label="{ {{CW | Year} | PM | A-SPICE 1}}"];
+//  t03 -> RG4;
+//  t04 [label="{ {{CW | Year} | PM | A-SPICE 2}}"];
+//  t04 -> RG8;
+//  // release
+//  node [shape=record, style=filled, fillcolor=greenyellow];
+//  t05 [label="{ {{CW | Year} | REL | TE \n Lvl 3}}"];
+//  t05 -> RG4;
+//  t06 [label="{ {{CW | Year} | REL | K \n Lvl 4}}"];
+//  t06 -> RG8;
+//
+//  // FEATURES
+//  node [shape=record, style=filled, fillcolor=greenyellow];
+//}
 
 }
