@@ -1,0 +1,334 @@
+digraph gCluster_1_2 {
+  rankdir=LR
+  style=filled;
+  color=lightgrey;
+  // FEATURES
+  node [shape=record, style=filled, fillcolor=lightblue];
+
+  Feature_SD_LOC_1_2
+  [
+      shape = none
+      label = <<table border="0" cellspacing="0">
+              <tr><td><table border="0" cellspacing="0">
+                <tr>
+                  <td port="market" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="yellow">EU</td></tr>
+                    <tr><td bgcolor="lightgrey">NAR</td></tr>
+                    <tr><td bgcolor="lightgrey">CHN</td></tr>
+                    <tr><td bgcolor="lightgrey">ROW</td></tr>
+                  </table></td>
+                  <td port="scenario" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="yellow">HW</td></tr>
+                    <tr><td bgcolor="lightgrey">RU</td></tr>
+                    <tr><td bgcolor="lightgrey">UR</td></tr>
+                  </table></td>
+                  <td port="subscenario" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="yellow">STD</td></tr>
+                    <tr><td bgcolor="lightgrey">CON</td></tr>
+                    <tr><td bgcolor="lightgrey">INT</td></tr>
+                    <tr><td bgcolor="lightgrey">CRO</td></tr>
+                    <tr><td bgcolor="lightgrey">RAB</td></tr>
+                  </table></td>
+                  <td port="resolution" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="yellow">SD</td></tr>
+                    <tr><td bgcolor="lightgrey">HD</td></tr>
+                    <tr><td bgcolor="lightgrey">ML</td></tr>
+                  </table></td>
+                </tr>
+              </table></td></tr>
+              <tr>
+                <td port="stereotype" border="1" bgcolor="lightblue">
+                  Feature
+                </td>
+              </tr>
+              <tr>
+                <td port="plugin" border="1" bgcolor="lightblue">
+                  LOC
+                </td>
+              </tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: SPOS
+              </td></tr>
+      </table>>
+  ];
+
+  Feature_RA_fused_1_2
+  [
+      shape = none
+      label = <<table border="0" cellspacing="0">
+              <tr><td><table border="0" cellspacing="0">
+                <tr>
+                  <td port="market" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="yellow">EU</td></tr>
+                    <tr><td bgcolor="lightgrey">NAR</td></tr>
+                    <tr><td bgcolor="lightgrey">CHN</td></tr>
+                    <tr><td bgcolor="lightgrey">ROW</td></tr>
+                  </table></td>
+                  <td port="scenario" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="yellow">HW</td></tr>
+                    <tr><td bgcolor="yellow">RU</td></tr>
+                    <tr><td bgcolor="yellow">UR</td></tr>
+                  </table></td>
+                  <td port="subscenario" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="yellow">STD</td></tr>
+                    <tr><td bgcolor="yellow">CON</td></tr>
+                    <tr><td bgcolor="yellow">INT</td></tr>
+                    <tr><td bgcolor="yellow">CRO</td></tr>
+                    <tr><td bgcolor="yellow">RAB</td></tr>
+                  </table></td>
+                  <td port="resolution" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="yellow">SD</td></tr>
+                    <tr><td bgcolor="lightgrey">HD</td></tr>
+                    <tr><td bgcolor="lightgrey">ML</td></tr>
+                  </table></td>
+                </tr>
+              </table></td></tr>
+              <tr>
+                <td port="stereotype" border="1" bgcolor="lightblue">
+                  Feature
+                </td>
+              </tr>
+              <tr>
+                <td port="plugin" border="1" bgcolor="lightblue">
+                  RA (fused)
+                </td>
+              </tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Speedlimit
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Road Signs
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: No Overtaking
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Constr. Site Recon.
+              </td></tr>
+      </table>>
+  ];
+
+  Feature_RA_maponly_1_2
+  [
+      shape = none
+      label = <<table border="0" cellspacing="0">
+              <tr><td><table border="0" cellspacing="0">
+                <tr>
+                  <td port="market" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="yellow">EU</td></tr>
+                    <tr><td bgcolor="lightgrey">NAR</td></tr>
+                    <tr><td bgcolor="lightgrey">CHN</td></tr>
+                    <tr><td bgcolor="lightgrey">ROW</td></tr>
+                  </table></td>
+                  <td port="scenario" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="yellow">HW</td></tr>
+                    <tr><td bgcolor="yellow">RU</td></tr>
+                    <tr><td bgcolor="yellow">UR</td></tr>
+                  </table></td>
+                  <td port="subscenario" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="yellow">STD</td></tr>
+                    <tr><td bgcolor="yellow">CON</td></tr>
+                    <tr><td bgcolor="yellow">INT</td></tr>
+                    <tr><td bgcolor="yellow">CRO</td></tr>
+                    <tr><td bgcolor="yellow">RAB</td></tr>
+                  </table></td>
+                  <td port="resolution" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="yellow">SD</td></tr>
+                    <tr><td bgcolor="lightgrey">HD</td></tr>
+                    <tr><td bgcolor="lightgrey">ML</td></tr>
+                  </table></td>
+                </tr>
+              </table></td></tr>
+              <tr>
+                <td port="stereotype" border="1" bgcolor="lightblue">
+                  Feature
+                </td>
+              </tr>
+              <tr>
+                <td port="plugin" border="1" bgcolor="lightblue">
+                  RA (map only)
+                </td>
+              </tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Country Code
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Country Borders
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Street Class
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Crossing
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Intersection
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Roundabout
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Other Attributes (Tunnel etc.)
+              </td></tr>
+      </table>>
+  ];
+
+  Feature_RA_Extended_1_2
+  [
+      shape = none
+      label = <<table border="0" cellspacing="0">
+              <tr><td><table border="0" cellspacing="0">
+                <tr>
+                  <td port="market" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="yellow">EU</td></tr>
+                    <tr><td bgcolor="lightgrey">NAR</td></tr>
+                    <tr><td bgcolor="lightgrey">CHN</td></tr>
+                    <tr><td bgcolor="lightgrey">ROW</td></tr>
+                  </table></td>
+                  <td port="scenario" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="yellow">HW</td></tr>
+                    <tr><td bgcolor="yellow">RU</td></tr>
+                    <tr><td bgcolor="yellow">UR</td></tr>
+                  </table></td>
+                  <td port="subscenario" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="yellow">STD</td></tr>
+                    <tr><td bgcolor="yellow">CON</td></tr>
+                    <tr><td bgcolor="yellow">INT</td></tr>
+                    <tr><td bgcolor="yellow">CRO</td></tr>
+                    <tr><td bgcolor="yellow">RAB</td></tr>
+                  </table></td>
+                  <td port="resolution" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="yellow">SD</td></tr>
+                    <tr><td bgcolor="lightgrey">HD</td></tr>
+                    <tr><td bgcolor="lightgrey">ML</td></tr>
+                  </table></td>
+                </tr>
+              </table></td></tr>
+              <tr>
+                <td port="stereotype" border="1" bgcolor="lightblue">
+                  Feature
+                </td>
+              </tr>
+              <tr>
+                <td port="plugin" border="1" bgcolor="lightblue">
+                  RA Extended
+                </td>
+              </tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Speedlimit List
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Curvature List
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Slopes List
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Intersection List
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Crossing List
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Junction List
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Roundabout List
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Other Attributes List
+              </td></tr>
+      </table>>
+  ];
+
+  Feature_RM_1_2
+  [
+      shape = none
+      label = <<table border="0" cellspacing="0">
+              <tr><td><table border="0" cellspacing="0">
+                <tr>
+                  <td port="market" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="yellow">EU</td></tr>
+                    <tr><td bgcolor="lightgrey">NAR</td></tr>
+                    <tr><td bgcolor="lightgrey">CHN</td></tr>
+                    <tr><td bgcolor="lightgrey">ROW</td></tr>
+                  </table></td>
+                  <td port="scenario" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="yellow">HW</td></tr>
+                    <tr><td bgcolor="yellow">RU</td></tr>
+                    <tr><td bgcolor="yellow">UR</td></tr>
+                  </table></td>
+                  <td port="subscenario" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="yellow">STD</td></tr>
+                    <tr><td bgcolor="lightyellow">CON</td></tr>
+                    <tr><td bgcolor="lightyellow">INT</td></tr>
+                    <tr><td bgcolor="lightyellow">CRO</td></tr>
+                    <tr><td bgcolor="lightyellow">RAB</td></tr>
+                  </table></td>
+                  <td port="resolution" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="yellow">SD</td></tr>
+                    <tr><td bgcolor="lightgrey">HD</td></tr>
+                    <tr><td bgcolor="lightgrey">ML</td></tr>
+                  </table></td>
+                </tr>
+              </table></td></tr>
+              <tr>
+                <td port="stereotype" border="1" bgcolor="lightblue">
+                  Feature
+                </td>
+              </tr>
+              <tr>
+                <td port="plugin" border="1" bgcolor="lightblue">
+                  RM
+                </td>
+              </tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: LFO
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Geometry Ego Lane
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Geometry 1-Neighbor
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Topology Ego Lane
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Non-/Drivable Ego Lane Marking
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Lane Type
+              </td></tr>
+      </table>>
+  ];
+
+  Cluster_1_2  -> Feature_SD_LOC_1_2;
+  Cluster_1_2  -> Feature_RA_fused_1_2;
+  Cluster_1_2  -> Feature_RA_maponly_1_2;
+  Cluster_1_2  -> Feature_RA_Extended_1_2;
+  Cluster_1_2  -> Feature_RM_1_2;
+
+  Cluster_1_2 [label="RG 20 Cluster 1 Prio 2"]
+
+}
