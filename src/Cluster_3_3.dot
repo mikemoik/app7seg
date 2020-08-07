@@ -1,11 +1,11 @@
-digraph gCluster_1_3 {
+digraph gCluster_3_3 {
   rankdir=LR
   style=filled;
   color=lightgrey;
   // FEATURES
   node [shape=record, style=filled, fillcolor=lightblue];
 
-  Feature_HD_LOC_1_3
+  Feature_HD_LOC_3_3
   [
       shape = none
       label = <<table border="0" cellspacing="0">
@@ -59,7 +59,7 @@ digraph gCluster_1_3 {
       </table>>
   ];
 
-  Feature_RA_fused_1_3
+  Feature_RA_fused_3_3
   [
       shape = none
       label = <<table border="0" cellspacing="0">
@@ -116,7 +116,7 @@ digraph gCluster_1_3 {
       </table>>
   ];
 
-  Feature_RA_maponly_1_3
+  Feature_RA_maponly_3_3
   [
       shape = none
       label = <<table border="0" cellspacing="0">
@@ -167,7 +167,7 @@ digraph gCluster_1_3 {
       </table>>
   ];
 
-  Feature_RA_Extended_1_3
+  Feature_RA_Extended_3_3
   [
       shape = none
       label = <<table border="0" cellspacing="0">
@@ -221,7 +221,7 @@ digraph gCluster_1_3 {
       </table>>
   ];
 
-  Feature_RM_1_3
+  Feature_RM_3_3
   [
       shape = none
       label = <<table border="0" cellspacing="0">
@@ -320,7 +320,7 @@ digraph gCluster_1_3 {
       </table>>
   ];
 
-  Feature_MPP_1_3
+  Feature_MPP_3_3
   [
       shape = none
       label = <<table border="0" cellspacing="0">
@@ -377,13 +377,13 @@ digraph gCluster_1_3 {
       </table>>
   ];
 
-  Cluster_1_3  -> Feature_HD_LOC_1_3;
-  Cluster_1_3  -> Feature_RA_fused_1_3;
-  Cluster_1_3  -> Feature_RA_maponly_1_3;
-  Cluster_1_3  -> Feature_RA_Extended_1_3;
-  Cluster_1_3  -> Feature_RM_1_3;
-  Cluster_1_3  -> Feature_MPP_1_3;
+  Cluster_3_3  -> Feature_HD_LOC_3_3;
+  Cluster_3_3  -> Feature_RA_fused_3_3;
+  Cluster_3_3  -> Feature_RA_maponly_3_3;
+  Cluster_3_3  -> Feature_RA_Extended_3_3;
+  Cluster_3_3  -> Feature_RM_3_3;
+  Cluster_3_3  -> Feature_MPP_3_3;
 
-  Cluster_1_3 [label="RG 20 Cluster 1 Prio 3"]
+  Cluster_3_3 [label="RG 20 Cluster 3 Prio 3"]
 
 }

@@ -1,11 +1,11 @@
-digraph gCluster_1_2 {
+digraph gCluster_2_2 {
   rankdir=LR
   style=filled;
   color=lightgrey;
   // FEATURES
   node [shape=record, style=filled, fillcolor=lightblue];
 
-  Feature_SD_LOC_1_2
+  Feature_SD_LOC_2_2
   [
       shape = none
       label = <<table border="0" cellspacing="0">
@@ -13,9 +13,9 @@ digraph gCluster_1_2 {
                 <tr>
                   <td port="market" border="0" bgcolor="white">
                   <table border="1" cellspacing="0">
-                    <tr><td bgcolor="yellow">EU</td></tr>
-                    <tr><td bgcolor="lightgrey">NAR</td></tr>
-                    <tr><td bgcolor="lightgrey">CHN</td></tr>
+                    <tr><td bgcolor="lightgrey">EU</td></tr>
+                    <tr><td bgcolor="yellow">NAR</td></tr>
+                    <tr><td bgcolor="yellow">CHN</td></tr>
                     <tr><td bgcolor="lightgrey">ROW</td></tr>
                   </table></td>
                   <td port="scenario" border="0" bgcolor="white">
@@ -56,7 +56,7 @@ digraph gCluster_1_2 {
       </table>>
   ];
 
-  //Feature_RA_fused_1_2
+  //Feature_RA_fused_2_2
   //[
   //    shape = none
   //    label = <<table border="0" cellspacing="0">
@@ -64,9 +64,9 @@ digraph gCluster_1_2 {
   //              <tr>
   //                <td port="market" border="0" bgcolor="white">
   //                <table border="1" cellspacing="0">
-  //                  <tr><td bgcolor="yellow">EU</td></tr>
-  //                  <tr><td bgcolor="lightgrey">NAR</td></tr>
-  //                  <tr><td bgcolor="lightgrey">CHN</td></tr>
+  //                  <tr><td bgcolor="lightgrey">EU</td></tr>
+  //                  <tr><td bgcolor="yellow">NAR</td></tr>
+  //                  <tr><td bgcolor="yellow">CHN</td></tr>
   //                  <tr><td bgcolor="lightgrey">ROW</td></tr>
   //                </table></td>
   //                <td port="scenario" border="0" bgcolor="white">
@@ -107,7 +107,7 @@ digraph gCluster_1_2 {
   //    </table>>
   //];
 //
-  //Feature_RA_maponly_1_2
+  //Feature_RA_maponly_2_2
   //[
   //    shape = none
   //    label = <<table border="0" cellspacing="0">
@@ -115,9 +115,9 @@ digraph gCluster_1_2 {
   //              <tr>
   //                <td port="market" border="0" bgcolor="white">
   //                <table border="1" cellspacing="0">
-  //                  <tr><td bgcolor="yellow">EU</td></tr>
-  //                  <tr><td bgcolor="lightgrey">NAR</td></tr>
-  //                  <tr><td bgcolor="lightgrey">CHN</td></tr>
+  //                  <tr><td bgcolor="lightgrey">EU</td></tr>
+  //                  <tr><td bgcolor="yellow">NAR</td></tr>
+  //                  <tr><td bgcolor="yellow">CHN</td></tr>
   //                  <tr><td bgcolor="lightgrey">ROW</td></tr>
   //                </table></td>
   //                <td port="scenario" border="0" bgcolor="white">
@@ -158,7 +158,7 @@ digraph gCluster_1_2 {
   //    </table>>
   //];
 //
-  //Feature_RA_Extended_1_2
+  //Feature_RA_Extended_2_2
   //[
   //    shape = none
   //    label = <<table border="0" cellspacing="0">
@@ -166,9 +166,9 @@ digraph gCluster_1_2 {
   //              <tr>
   //                <td port="market" border="0" bgcolor="white">
   //                <table border="1" cellspacing="0">
-  //                  <tr><td bgcolor="yellow">EU</td></tr>
-  //                  <tr><td bgcolor="lightgrey">NAR</td></tr>
-  //                  <tr><td bgcolor="lightgrey">CHN</td></tr>
+  //                  <tr><td bgcolor="lightgrey">EU</td></tr>
+  //                  <tr><td bgcolor="yellow">NAR</td></tr>
+  //                  <tr><td bgcolor="yellow">CHN</td></tr>
   //                  <tr><td bgcolor="lightgrey">ROW</td></tr>
   //                </table></td>
   //                <td port="scenario" border="0" bgcolor="white">
@@ -209,7 +209,7 @@ digraph gCluster_1_2 {
   //    </table>>
   //];
 
-  Feature_RM_1_2
+  Feature_RM_2_2
   [
       shape = none
       label = <<table border="0" cellspacing="0">
@@ -217,9 +217,9 @@ digraph gCluster_1_2 {
                 <tr>
                   <td port="market" border="0" bgcolor="white">
                   <table border="1" cellspacing="0">
-                    <tr><td bgcolor="yellow">EU</td></tr>
-                    <tr><td bgcolor="lightgrey">NAR</td></tr>
-                    <tr><td bgcolor="lightgrey">CHN</td></tr>
+                    <tr><td bgcolor="lightgrey">EU</td></tr>
+                    <tr><td bgcolor="yellow">NAR</td></tr>
+                    <tr><td bgcolor="yellow">CHN</td></tr>
                     <tr><td bgcolor="lightgrey">ROW</td></tr>
                   </table></td>
                   <td port="scenario" border="0" bgcolor="white">
@@ -266,7 +266,7 @@ digraph gCluster_1_2 {
       </table>>
   ];
 
-  Feature_MPP_1_2
+  Feature_MPP_2_2
   [
       shape = none
       label = <<table border="0" cellspacing="0">
@@ -274,9 +274,9 @@ digraph gCluster_1_2 {
                 <tr>
                   <td port="market" border="0" bgcolor="white">
                   <table border="1" cellspacing="0">
-                    <tr><td bgcolor="yellow">EU</td></tr>
-                    <tr><td bgcolor="lightgrey">NAR</td></tr>
-                    <tr><td bgcolor="lightgrey">CHN</td></tr>
+                    <tr><td bgcolor="lightgrey">EU</td></tr>
+                    <tr><td bgcolor="yellow">NAR</td></tr>
+                    <tr><td bgcolor="yellow">CHN</td></tr>
                     <tr><td bgcolor="lightgrey">ROW</td></tr>
                   </table></td>
                   <td port="scenario" border="0" bgcolor="white">
@@ -320,13 +320,13 @@ digraph gCluster_1_2 {
       </table>>
   ];
 
-  Cluster_1_2  -> Feature_SD_LOC_1_2;
-  //Cluster_1_2  -> Feature_RA_fused_1_2;
-  //Cluster_1_2  -> Feature_RA_maponly_1_2;
-  //Cluster_1_2  -> Feature_RA_Extended_1_2;
-  Cluster_1_2  -> Feature_RM_1_2;
-  Cluster_1_2  -> Feature_MPP_1_2;
+  Cluster_2_2  -> Feature_SD_LOC_2_2;
+  //Cluster_2_2  -> Feature_RA_fused_2_2;
+  //Cluster_2_2  -> Feature_RA_maponly_2_2;
+  //Cluster_2_2  -> Feature_RA_Extended_2_2;
+  Cluster_2_2  -> Feature_RM_2_2;
+  Cluster_2_2  -> Feature_MPP_2_2;
 
-  Cluster_1_2 [label="RG 20 Cluster 1 Prio 2"]
+  Cluster_2_2 [label="RG 20 Cluster 2 Prio 2"]
 
 }

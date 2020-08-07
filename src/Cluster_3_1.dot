@@ -1,11 +1,11 @@
-digraph gCluster_1_3 {
+digraph gCluster_3_1 {
   rankdir=LR
   style=filled;
   color=lightgrey;
   // FEATURES
   node [shape=record, style=filled, fillcolor=lightblue];
 
-  Feature_HD_LOC_1_3
+  Feature_SD_LOC_3_1
   [
       shape = none
       label = <<table border="0" cellspacing="0">
@@ -21,22 +21,22 @@ digraph gCluster_1_3 {
                   <td port="scenario" border="0" bgcolor="white">
                   <table border="1" cellspacing="0">
                     <tr><td bgcolor="yellow">HW</td></tr>
-                    <tr><td bgcolor="yellow">RU</td></tr>
-                    <tr><td bgcolor="lightyellow">UR</td></tr>
+                    <tr><td bgcolor="lightgrey">RU</td></tr>
+                    <tr><td bgcolor="lightgrey">UR</td></tr>
                   </table></td>
                   <td port="subscenario" border="0" bgcolor="white">
                   <table border="1" cellspacing="0">
                     <tr><td bgcolor="yellow">STD</td></tr>
                     <tr><td bgcolor="lightgrey">CON</td></tr>
                     <tr><td bgcolor="yellow">INT</td></tr>
-                    <tr><td bgcolor="lightyellow">CRO</td></tr>
-                    <tr><td bgcolor="lightyellow">RAB</td></tr>
+                    <tr><td bgcolor="lightgrey">CRO</td></tr>
+                    <tr><td bgcolor="lightgrey">RAB</td></tr>
                   </table></td>
                   <td port="resolution" border="0" bgcolor="white">
                   <table border="1" cellspacing="0">
-                    <tr><td bgcolor="lightgrey">SD</td></tr>
-                    <tr><td bgcolor="yellow">HD</td></tr>
-                    <tr><td bgcolor="lightyellow">ML</td></tr>
+                    <tr><td bgcolor="yellow">SD</td></tr>
+                    <tr><td bgcolor="lightgrey">HD</td></tr>
+                    <tr><td bgcolor="lightgrey">ML</td></tr>
                   </table></td>
                 </tr>
               </table></td></tr>
@@ -53,70 +53,10 @@ digraph gCluster_1_3 {
               <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
                   SDFL-xxxx: SPOS
               </td></tr>
-              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
-                  SDFL-xxxx: HAD Map Matching
-              </td></tr>
       </table>>
   ];
 
-  Feature_RA_fused_1_3
-  [
-      shape = none
-      label = <<table border="0" cellspacing="0">
-              <tr><td><table border="0" cellspacing="0">
-                <tr>
-                  <td port="market" border="0" bgcolor="white">
-                  <table border="1" cellspacing="0">
-                    <tr><td bgcolor="yellow">EU</td></tr>
-                    <tr><td bgcolor="lightgrey">NAR</td></tr>
-                    <tr><td bgcolor="lightgrey">CHN</td></tr>
-                    <tr><td bgcolor="lightgrey">ROW</td></tr>
-                  </table></td>
-                  <td port="scenario" border="0" bgcolor="white">
-                  <table border="1" cellspacing="0">
-                    <tr><td bgcolor="yellow">HW</td></tr>
-                    <tr><td bgcolor="yellow">RU</td></tr>
-                    <tr><td bgcolor="yellow">UR</td></tr>
-                  </table></td>
-                  <td port="subscenario" border="0" bgcolor="white">
-                  <table border="1" cellspacing="0">
-                    <tr><td bgcolor="yellow">STD</td></tr>
-                    <tr><td bgcolor="yellow">CON</td></tr>
-                    <tr><td bgcolor="yellow">INT</td></tr>
-                    <tr><td bgcolor="yellow">CRO</td></tr>
-                    <tr><td bgcolor="yellow">RAB</td></tr>
-                  </table></td>
-                  <td port="resolution" border="0" bgcolor="white">
-                  <table border="1" cellspacing="0">
-                    <tr><td bgcolor="lightgrey">SD</td></tr>
-                    <tr><td bgcolor="yellow">HD</td></tr>
-                    <tr><td bgcolor="lightgrey">ML</td></tr>
-                  </table></td>
-                </tr>
-              </table></td></tr>
-              <tr>
-                <td port="stereotype" border="1" bgcolor="lightblue">
-                  Feature
-                </td>
-              </tr>
-              <tr>
-                <td port="plugin" border="1" bgcolor="lightblue">
-                  RA (fused)
-                </td>
-              </tr>
-              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
-                  SDFL-xxxx: Speedlimits
-              </td></tr>
-              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
-                  SDFL-xxxx: Traffic Signs
-              </td></tr>
-              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
-                  SDFL-xxxx: Stopsign, Stopline
-              </td></tr>
-      </table>>
-  ];
-
-  Feature_RA_maponly_1_3
+  Feature_RA_fused_3_1
   [
       shape = none
       label = <<table border="0" cellspacing="0">
@@ -146,7 +86,7 @@ digraph gCluster_1_3 {
                   <td port="resolution" border="0" bgcolor="white">
                   <table border="1" cellspacing="0">
                     <tr><td bgcolor="yellow">SD</td></tr>
-                    <tr><td bgcolor="yellow">HD</td></tr>
+                    <tr><td bgcolor="lightgrey">HD</td></tr>
                     <tr><td bgcolor="lightgrey">ML</td></tr>
                   </table></td>
                 </tr>
@@ -158,16 +98,28 @@ digraph gCluster_1_3 {
               </tr>
               <tr>
                 <td port="plugin" border="1" bgcolor="lightblue">
-                  RA (map only)
+                  RA (fused)
                 </td>
               </tr>
               <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
-                  SDFL-xxxx: Traffic Handiness
+                  SDFL-xxxx: Speedlimit
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Road Signs
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: No Overtaking
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Constr. Site Recon.
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: MPP Change Rebuild 100ms
               </td></tr>
       </table>>
   ];
 
-  Feature_RA_Extended_1_3
+  Feature_RA_maponly_3_1
   [
       shape = none
       label = <<table border="0" cellspacing="0">
@@ -196,8 +148,80 @@ digraph gCluster_1_3 {
                   </table></td>
                   <td port="resolution" border="0" bgcolor="white">
                   <table border="1" cellspacing="0">
-                    <tr><td bgcolor="lightgrey">SD</td></tr>
-                    <tr><td bgcolor="yellow">HD</td></tr>
+                    <tr><td bgcolor="yellow">SD</td></tr>
+                    <tr><td bgcolor="lightgrey">HD</td></tr>
+                    <tr><td bgcolor="lightgrey">ML</td></tr>
+                  </table></td>
+                </tr>
+              </table></td></tr>
+              <tr>
+                <td port="stereotype" border="1" bgcolor="lightblue">
+                  Feature
+                </td>
+              </tr>
+              <tr>
+                <td port="plugin" border="1" bgcolor="lightblue">
+                  RA (map only)
+                </td>
+              </tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Country Code
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Country Borders
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Street Class
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Crossing
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Intersection
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Roundabout
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Other Attributes (Tunnel etc.)
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: MPP Change Rebuild 100ms
+              </td></tr>
+      </table>>
+  ];
+
+  Feature_RA_Extended_3_1
+  [
+      shape = none
+      label = <<table border="0" cellspacing="0">
+              <tr><td><table border="0" cellspacing="0">
+                <tr>
+                  <td port="market" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="yellow">EU</td></tr>
+                    <tr><td bgcolor="lightgrey">NAR</td></tr>
+                    <tr><td bgcolor="lightgrey">CHN</td></tr>
+                    <tr><td bgcolor="lightgrey">ROW</td></tr>
+                  </table></td>
+                  <td port="scenario" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="yellow">HW</td></tr>
+                    <tr><td bgcolor="yellow">RU</td></tr>
+                    <tr><td bgcolor="yellow">UR</td></tr>
+                  </table></td>
+                  <td port="subscenario" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="yellow">STD</td></tr>
+                    <tr><td bgcolor="yellow">CON</td></tr>
+                    <tr><td bgcolor="yellow">INT</td></tr>
+                    <tr><td bgcolor="yellow">CRO</td></tr>
+                    <tr><td bgcolor="yellow">RAB</td></tr>
+                  </table></td>
+                  <td port="resolution" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="yellow">SD</td></tr>
+                    <tr><td bgcolor="lightgrey">HD</td></tr>
                     <tr><td bgcolor="lightgrey">ML</td></tr>
                   </table></td>
                 </tr>
@@ -213,15 +237,36 @@ digraph gCluster_1_3 {
                 </td>
               </tr>
               <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
-                  SDFL-xxxx: Lane acc. Curvature List
+                  SDFL-xxxx: Speedlimit List
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Curvature List
               </td></tr>
               <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
                   SDFL-xxxx: Slopes List
               </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Intersection List
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Crossing List
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Junction List
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Roundabout List
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Other Attributes List
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: MPP Change Rebuild 100ms
+              </td></tr>
       </table>>
   ];
 
-  Feature_RM_1_3
+  Feature_RM_3_1
   [
       shape = none
       label = <<table border="0" cellspacing="0">
@@ -251,7 +296,7 @@ digraph gCluster_1_3 {
                   <td port="resolution" border="0" bgcolor="white">
                   <table border="1" cellspacing="0">
                     <tr><td bgcolor="yellow">SD</td></tr>
-                    <tr><td bgcolor="yellow">HD</td></tr>
+                    <tr><td bgcolor="lightgrey">HD</td></tr>
                     <tr><td bgcolor="lightgrey">ML</td></tr>
                   </table></td>
                 </tr>
@@ -267,43 +312,13 @@ digraph gCluster_1_3 {
                 </td>
               </tr>
               <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
-                  SDFL-xxxx: LFO
-              </td></tr>
-              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
-                  SDFL-xxxx: Rear Geometry Ego Lane
-              </td></tr>
-              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
-                  SDFL-xxxx: Rear Geometry 1-Neighbor
-              </td></tr>
-              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
-                  SDFL-xxxx: Rear Geometry 2-Neighbor
-              </td></tr>
-              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
                   SDFL-xxxx: Geometry Ego Lane
               </td></tr>
               <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
-                  SDFL-xxxx: Geometry 1,2-Neighbor
+                  SDFL-xxxx: Geometry 1-Neighbor
               </td></tr>
               <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
                   SDFL-xxxx: Topology Ego Lane
-              </td></tr>
-              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
-                  SDFL-xxxx: Topology 1,2-Neighbor
-              </td></tr>
-              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
-                  SDFL-xxxx: Geometry Road Edges
-              </td></tr>
-              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
-                  SDFL-xxxx: Type Road Edges
-              </td></tr>
-              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
-                  SDFL-xxxx: Road Seperators
-              </td></tr>
-              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
-                  SDFL-xxxx: Intersection Area
-              </td></tr>
-              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
-                  SDFL-xxxx: Topology Road (Branching Road Segments)
               </td></tr>
               <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
                   SDFL-xxxx: Non-/Drivable Ego Lane Marking
@@ -312,15 +327,24 @@ digraph gCluster_1_3 {
                   SDFL-xxxx: Lane Type
               </td></tr>
               <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Geometry Road Edges
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Type Road Edges
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
                   SDFL-xxxx: Exit Handling
               </td></tr>
               <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
                   SDFL-xxxx: WBA, SWA, Rearfunctions
               </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: MPP Change Rebuild 100ms
+              </td></tr>
       </table>>
   ];
 
-  Feature_MPP_1_3
+  Feature_MPP_3_1
   [
       shape = none
       label = <<table border="0" cellspacing="0">
@@ -336,21 +360,21 @@ digraph gCluster_1_3 {
                   <td port="scenario" border="0" bgcolor="white">
                   <table border="1" cellspacing="0">
                     <tr><td bgcolor="yellow">HW</td></tr>
-                    <tr><td bgcolor="yellow">RU</td></tr>
-                    <tr><td bgcolor="lightyellow">UR</td></tr>
+                    <tr><td bgcolor="lightgrey">RU</td></tr>
+                    <tr><td bgcolor="lightgrey">UR</td></tr>
                   </table></td>
                   <td port="subscenario" border="0" bgcolor="white">
                   <table border="1" cellspacing="0">
                     <tr><td bgcolor="yellow">STD</td></tr>
                     <tr><td bgcolor="lightgrey">CON</td></tr>
                     <tr><td bgcolor="yellow">INT</td></tr>
-                    <tr><td bgcolor="yellow">CRO</td></tr>
-                    <tr><td bgcolor="yellow">RAB</td></tr>
+                    <tr><td bgcolor="lightgrey">CRO</td></tr>
+                    <tr><td bgcolor="lightgrey">RAB</td></tr>
                   </table></td>
                   <td port="resolution" border="0" bgcolor="white">
                   <table border="1" cellspacing="0">
                     <tr><td bgcolor="yellow">SD</td></tr>
-                    <tr><td bgcolor="yellow">HD</td></tr>
+                    <tr><td bgcolor="lightgrey">HD</td></tr>
                     <tr><td bgcolor="lightgrey">ML</td></tr>
                   </table></td>
                 </tr>
@@ -366,24 +390,17 @@ digraph gCluster_1_3 {
                 </td>
               </tr>
               <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
-                  SDFL-xxxx: Involve Indicator
-              </td></tr>
-              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
                   SDFL-xxxx: Involve SPOS
-              </td></tr>
-              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
-                  SDFL-xxxx: Lane accurate MPP
               </td></tr>
       </table>>
   ];
 
-  Cluster_1_3  -> Feature_HD_LOC_1_3;
-  Cluster_1_3  -> Feature_RA_fused_1_3;
-  Cluster_1_3  -> Feature_RA_maponly_1_3;
-  Cluster_1_3  -> Feature_RA_Extended_1_3;
-  Cluster_1_3  -> Feature_RM_1_3;
-  Cluster_1_3  -> Feature_MPP_1_3;
+  Cluster_3_1  -> Feature_SD_LOC_3_1;
+  Cluster_3_1  -> Feature_RA_fused_3_1;
+  Cluster_3_1  -> Feature_RA_maponly_3_1;
+  Cluster_3_1  -> Feature_RA_Extended_3_1;
+  Cluster_3_1  -> Feature_RM_3_1;
+  Cluster_3_1  -> Feature_MPP_3_1;
 
-  Cluster_1_3 [label="RG 20 Cluster 1 Prio 3"]
-
+  Cluster_3_1 [label="RG 20 Cluster 3 Prio 1"]
 }

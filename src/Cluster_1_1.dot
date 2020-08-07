@@ -28,7 +28,7 @@ digraph gCluster_1_1 {
                   <table border="1" cellspacing="0">
                     <tr><td bgcolor="yellow">STD</td></tr>
                     <tr><td bgcolor="lightgrey">CON</td></tr>
-                    <tr><td bgcolor="lightgrey">INT</td></tr>
+                    <tr><td bgcolor="yellow">INT</td></tr>
                     <tr><td bgcolor="lightgrey">CRO</td></tr>
                     <tr><td bgcolor="lightgrey">RAB</td></tr>
                   </table></td>
@@ -312,9 +312,6 @@ digraph gCluster_1_1 {
                 </td>
               </tr>
               <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
-                  SDFL-xxxx: LFO
-              </td></tr>
-              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
                   SDFL-xxxx: Geometry Ego Lane
               </td></tr>
               <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
@@ -330,6 +327,12 @@ digraph gCluster_1_1 {
                   SDFL-xxxx: Lane Type
               </td></tr>
               <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Geometry Road Edges
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Type Road Edges
+              </td></tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
                   SDFL-xxxx: Exit Handling
               </td></tr>
               <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
@@ -341,11 +344,63 @@ digraph gCluster_1_1 {
       </table>>
   ];
 
+  Feature_MPP_1_1
+  [
+      shape = none
+      label = <<table border="0" cellspacing="0">
+              <tr><td><table border="0" cellspacing="0">
+                <tr>
+                  <td port="market" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="yellow">EU</td></tr>
+                    <tr><td bgcolor="lightgrey">NAR</td></tr>
+                    <tr><td bgcolor="lightgrey">CHN</td></tr>
+                    <tr><td bgcolor="lightgrey">ROW</td></tr>
+                  </table></td>
+                  <td port="scenario" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="yellow">HW</td></tr>
+                    <tr><td bgcolor="lightgrey">RU</td></tr>
+                    <tr><td bgcolor="lightgrey">UR</td></tr>
+                  </table></td>
+                  <td port="subscenario" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="yellow">STD</td></tr>
+                    <tr><td bgcolor="lightgrey">CON</td></tr>
+                    <tr><td bgcolor="yellow">INT</td></tr>
+                    <tr><td bgcolor="lightgrey">CRO</td></tr>
+                    <tr><td bgcolor="lightgrey">RAB</td></tr>
+                  </table></td>
+                  <td port="resolution" border="0" bgcolor="white">
+                  <table border="1" cellspacing="0">
+                    <tr><td bgcolor="yellow">SD</td></tr>
+                    <tr><td bgcolor="lightgrey">HD</td></tr>
+                    <tr><td bgcolor="lightgrey">ML</td></tr>
+                  </table></td>
+                </tr>
+              </table></td></tr>
+              <tr>
+                <td port="stereotype" border="1" bgcolor="lightblue">
+                  Feature
+                </td>
+              </tr>
+              <tr>
+                <td port="plugin" border="1" bgcolor="lightblue">
+                    MPP
+                </td>
+              </tr>
+              <tr><td port="SDFL-xxxxx" border="1" bgcolor="white">
+                  SDFL-xxxx: Involve SPOS
+              </td></tr>
+      </table>>
+  ];
+
   Cluster_1_1  -> Feature_SD_LOC_1_1;
   Cluster_1_1  -> Feature_RA_fused_1_1;
   Cluster_1_1  -> Feature_RA_maponly_1_1;
   Cluster_1_1  -> Feature_RA_Extended_1_1;
   Cluster_1_1  -> Feature_RM_1_1;
+  Cluster_1_1  -> Feature_MPP_1_1;
 
   Cluster_1_1 [label="RG 20 Cluster 1 Prio 1"]
 }
